@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: javax.servlet.jsp:jsp-api:2.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

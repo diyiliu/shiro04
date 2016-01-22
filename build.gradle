@@ -1,0 +1,56 @@
+group 'com.diyiliu'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+ext {
+    shiroVersion = '1.2.4'
+    springVersion = '4.2.1.RELEASE'
+    aspectjVersion = '1.8.7'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+
+    compile(
+            // shiro 包
+            "org.apache.shiro:shiro-core:$shiroVersion",
+            "org.apache.shiro:shiro-ehcache:$shiroVersion",
+            "org.apache.shiro:shiro-quartz:$shiroVersion",
+            "org.apache.shiro:shiro-spring:$shiroVersion",
+            "org.apache.shiro:shiro-web:$shiroVersion",
+            // spring 包
+            "org.springframework:spring-core:$springVersion",
+            "org.springframework:spring-context-support:$springVersion",
+            "org.springframework:spring-aop:$springVersion",
+            "org.springframework:spring-tx:$springVersion",
+            "org.springframework:spring-webmvc:$springVersion",
+            "org.springframework:spring-jdbc:$springVersion",
+            // aspectj 包
+            "org.aspectj:aspectjrt:$aspectjVersion",
+            "org.aspectj:aspectjweaver:$aspectjVersion",
+            // servlet 包
+            'javax.servlet:javax.servlet-api:3.1.0',
+            'javax.servlet.jsp:jsp-api:2.2',
+            'javax.servlet:jstl:1.2',
+            // 其他依赖包
+            'mysql:mysql-connector-java:5.1.36',
+            'com.alibaba:druid:1.0.16',
+            'net.sf.ehcache:ehcache:2.10.0',
+            'commons-logging:commons-logging:1.2',
+            'commons-collections:commons-collections:3.2.1',
+            'org.slf4j:slf4j-nop:1.7.12'
+    )
+
+    testCompile(
+            "org.springframework:spring-test:$springVersion",
+            'junit:junit:4.12',
+    )
+}
