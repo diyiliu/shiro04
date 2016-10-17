@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/shiro04.iml" filepath="$PROJECT_DIR$/shiro04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shiro04.iml" filepath="$PROJECT_DIR$/.idea/modules/shiro04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shiro04_main.iml" filepath="$PROJECT_DIR$/.idea/modules/shiro04_main.iml" group="shiro04" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shiro04_test.iml" filepath="$PROJECT_DIR$/.idea/modules/shiro04_test.iml" group="shiro04" />
     </modules>
   </component>
 </project>
